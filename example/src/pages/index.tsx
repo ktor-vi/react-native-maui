@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from 'react-native-maui';
 import { StyleSheet, View, Text, FlatList } from 'react-native';
 import { navigate } from '../navigate';
 
@@ -16,6 +17,7 @@ export default function ComponentScreen() {
       style={[styles.container, { backgroundColor: theme.backgroundColor }]}
     >
       <WaterMark />
+
       <FlatList
         testID="EXAMPLE-FLAT-LIST"
         style={styles.flatList}
